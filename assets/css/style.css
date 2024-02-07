@@ -60,7 +60,7 @@ body {
     position: absolute;
     width: 50px;
     height: 2px;
-    background: #ffb606;
+    background: var(--primary);
     bottom: 0;
     left: 50%;
     margin-left: -54px;
@@ -71,7 +71,7 @@ body {
     position: absolute;
     width: 50px;
     height: 2px;
-    background: #ffb606;
+    background: var(--primary);
     bottom: 0;
     left: 50%;
     margin-left: 5px;
@@ -102,7 +102,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 0;
+/*    padding: 5px 0;*/
 }
 
 .nav-toggle-btn {
@@ -147,6 +147,10 @@ body {
     color: #0165bb;
 }
 
+.header__bottom-wrapper {
+    border-top: 1px solid #ddd;
+}
+
 .nav-list {
     display: flex;
     align-items: center;
@@ -169,6 +173,7 @@ body {
     z-index: 9;
     opacity: 0;
     visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .submenu-list-item-link {
@@ -201,7 +206,8 @@ body {
     justify-content: space-around;
     padding-left: 0;
     visibility: hidden;
-    opacity: 0;    
+    opacity: 0; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
 }
 
 .megamenu-submenu-list {
@@ -226,7 +232,7 @@ body {
 }
 
 .nav-list-item.item-has-megamenu:hover .megamenu-list {
-    top: 130px;
+    top: 124px;
     opacity: 1;
     visibility: visible;
     transition: all .3s ease;
@@ -353,7 +359,7 @@ body {
 }
 
 .home__info-btn-inner {
-    background: #0165bb;
+    background: var(--primary);
     display: inline-block;
     padding: 10px 25px;
     text-transform: uppercase;
@@ -426,7 +432,7 @@ body {
     margin-bottom: 20px;
 }
 .feature__right-title{
-    background: #002147;
+    background: var(--primary);
     color: #ffffff;
     margin: 0;
     font-size: 20px;
@@ -455,7 +461,7 @@ body {
     transition: all .3s ease;    
 }
 .feature__right-item-title:hover {
-    color: #ffb606;
+    color: var(--primary);
 }
 .feature__right-item-meta {
     color: #666666;
@@ -484,7 +490,7 @@ body {
     color: #ffb606
 }
 .feature__right-registration-title{
-    background: #002147;
+    background: var(--primary);
     color: #ffffff;
     margin: 0;
     font-size: 20px;
@@ -507,11 +513,12 @@ body {
     margin-bottom: 20px;
 }
 .feature__right-register-btn {
-    background: #ffb606;
+    background: var(--primary);
     padding: 14px 25px;
     border: none;
     font-weight: 500;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .animate-label label {
@@ -632,6 +639,11 @@ body {
     padding: 7px 15px;
     border-radius: 30px;
     margin-bottom: 0px;
+    transition: all .5s ease;
+}
+.course-info__tag-inner:hover{
+    background: var(--primary);
+    color: #fff;
 }
 .course-item__info-name {
     font-size: 18px;
@@ -763,7 +775,7 @@ body {
 }
 /*Popular courses section css End*/
 
-/*Top Categori section css start*/
+/*Top industries section css start*/
  .top-industries-section {
     padding: 40px 0px;
 }
@@ -822,7 +834,7 @@ body {
 .top-industries__item-inner:hover .top-industries__item-info-text {
     color: #ffffff;
 }
-/*Top Categori section css End*/
+/*Top industries section css End*/
 
 /*Team scetion css start*/
 .team-section {
@@ -858,12 +870,12 @@ body {
     transition: all .3s ease;
 }
 .team__item-info-position {
-    color: #ffb606;
+    color: #0165bb;
     font-weight: 500;
     text-transform: uppercase;
 }
 .team__item-overlay {
-    background: rgba(0, 33, 71, 0.7) none repeat scroll 0 0;
+    background: rgb(22 28 122 / 80%) none repeat scroll 0 0;
     width: auto;
     height: auto;
     text-align: center;
@@ -896,7 +908,7 @@ body {
     font-weight: 400;
 }
 .team__item-overlay-btn-link {
-    color: #ffb606;
+    color: #007aff;
     display: inline-block;
     text-align: center;
     font-size: 12px;
@@ -983,7 +995,7 @@ body {
     position: relative;
     z-index: 1;
 }
-.shadow:after {
+.video-section.shadow:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -994,38 +1006,38 @@ body {
     background: #002147;
     z-index: -1;
 }
-.video-section-heading .title {
+.video__top-title {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     position: relative;
     z-index: 1;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     margin-bottom: 15px;
     font-size: 30px;
     font-weight: 600;
 }
-.video-section-heading .title:before {
+.video__top-title:before {
     content: "";
     position: absolute;
-    background: #ffb606;
+    background: var(--primary);
     height: 2px;
     width: 40px;
     bottom: 0;
     left: 50%;
     margin-left: -65px;
 }
-.video-section-heading .title:after {
+.video__top-title:after {
     content: "";
     position: absolute;
     height: 2px;
     width: 45px;
-    background: #ffb606;
+    background: var(--primary);
     bottom: 0;
     left: 50%;
     margin-left: -10px;
 }
-.video-section-heading .description {
+.video__top-description {
     color: #ffffff;
     text-align: center;
     font-size: 13px;
@@ -1063,7 +1075,7 @@ body {
     display: block;
     width: 80px;
     height: 80px;
-    background: #ffb606  repeat scroll 0 0;
+    background: var(--primary);  repeat scroll 0 0;
     z-index: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -1078,7 +1090,7 @@ body {
     display: block;
     left: 50%;
     top: 50%;
-    background: #ffb606  repeat scroll 0 0;
+    background: var(--primary);  repeat scroll 0 0;
     transform: translate(-50%, -50%);
     transition: all 200ms;
     border-radius: 50%;
@@ -1118,8 +1130,8 @@ body {
 
 /*Review css start*/
 .review-section {
-    padding: 70px 0px;
-    background: #002147;
+    padding: 50px 0px;
+    background: var(--primary);
 }
 .review-section .section__title {
     color: #fff;
@@ -1160,7 +1172,7 @@ body {
     margin-bottom: 0px;
 }
 .review__item-info-sub-title {
-    color: #ffb606;
+    color: #ddd;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
@@ -1221,91 +1233,83 @@ body {
 }
 /*student review css end*/
 
-/*latest news section css start*/
-.latest-news-section{
-    padding: 70px 0px;
+/*Blog section css start*/
+.blog-section{
+    padding: 50px 0px;
 }
-.latest-news-heading .title{
-    color: #002147!important;
-    text-transform: capitalize;
-}
-.latest-news-heading .description{
-    color: #666666;
-    text-align: center;
-    line-height: 26px;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-.latest-news-item {
+.blog__item-outer {
     margin-bottom: 30px;
 }
-.news-item-img {
+.blog__item-img-outer {
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
-.news-item-img .img-link img {
+.blog__item-img-link img {
     position: relative;
     display: block;
     transition: all .35s ease;
     border-radius: 5px 5px 0 0;
 }
-.news-item-img .news-item-date {
+.blog__item-date {
     position: absolute;
     z-index: 1;
     bottom: 15px;
     left: 15px;
     padding: 15px 20px;
-    color: #ffb606;
+    color: #158bf1;
     font-size: 14px;
     text-transform: capitalize;
     text-align: center;
 }
-.news-item-img .news-item-date span {
+.blog__item-date span {
     font-size: 40px;
     display: block;
     font-weight: 900;
 }
-.latest-news-item .news-item-info {
+.blog__item-info-outer {
     padding-top: 30px;
 }
-.latest-news-item .news-item-info .title {
+.blog__item-info-title {
     font-size: 18px;
     font-weight: 600;
     color: #002147;
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-.latest-news-item .news-item-info .description {
+.blog__item-info-description {
     color: #666666;
     line-height: 26px;
     font-size: 14px;
     font-weight: 400;
 }
-.latest-news-item .news-item-info a {
+.blog__item-info-btn-link {
     color: #666666;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
 }
-.latest-news-item .news-item-info .meta {
+.blog__item-info-meta-outer {
     border-top: 1px solid #e7e7e7;
     margin-top: 15px;
     padding-top: 15px;
 }
-.latest-news-item .news-item-info ul li {
+.blog__item-info-meta-outer ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.blog__item-info-meta-outer ul li {
     color: #666666;
     display: inline-block;
     margin-right: 10px;
     text-transform: uppercase;
 }
-.latest-news-item .news-item-info ul li a {
+.blog__item-info-meta-outer ul li a {
     color: #666666;
     display: inline-block;
     font-weight: 400;
 }
-.news-item-img .news-item-date:after {
+.blog__item-date:after {
     content: "";
     position: absolute;
     background: #002147;
@@ -1317,10 +1321,10 @@ body {
     z-index: -1;
     border-radius: 7px;
 }
-.latest-news-item:hover .news-item-img .img-link img {
+.blog__item-outer:hover .blog__item-img-link img {
     transform: scale(1.2);
 }
-/*latest news section css End*/
+/*Blog section css End*/
 
 /*subscribe now section css start*/
 .subscribe-section {
@@ -1373,7 +1377,7 @@ body {
     box-shadow: inherit;
 }
 .subscribe-form form button {
-    background: #ffb606;
+    background: var(--primary);
     border: medium none;
     position: absolute;
     right: 5px;
@@ -1385,13 +1389,37 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #333333;
+    color: #fff;
 }
 /*subscribe noe section css End*/
 
+/*clients section css start*/
+.client-section {
+    padding: 50px 0;
+}
+.client__logo-item-outer {
+    display: inline-block;
+}
+.client-items-wrapper {
+    text-align: center;
+}
+.client__logo-item-inner {
+    max-width: 160px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    opacity: 0.7;
+    transition: all .5s ease;
+}
+.client__logo-item-inner:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    opacity: 1;
+}
+/*clients section css End*/
+
 /*footer section css start*/
 .footer-section {
-    padding-top: 80px;
+    padding-top: 20px;
     background-color: #ffffff;
 }
 .footer-items .item {
@@ -1538,10 +1566,10 @@ body {
     color: #ffb606;
 }
 
-    /*footer bottom css start*/
+/*footer bottom css start*/
 .footer-bottom {
     border-top: 1px solid #e7e7e7;
-    margin-top: 80px;
+    margin-top: 20px;
     padding: 20px 0;
 }
 .footer-bottom-content {
@@ -1560,7 +1588,7 @@ body {
     margin-bottom: 0;
 }
 .footer-bottom-content p a {
-    color: #ffb606;
+    color: #007aff;
     font-weight: 600;
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -1766,9 +1794,6 @@ body {
 .gallery-item:hover .gallery-item-zoom-overlay a {
     opacity: 1;
 }
-
-
-
 
     /*gallery image css End*/
     /*gallery footer css start*/
@@ -3017,31 +3042,6 @@ body {
     color: #666666;
 }
 /*course section css End*/
-
-/*clients section css start*/
-.clients-section {
-    padding: 80px 0;
-}
-.client-info h4 {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    color: #002147;
-}
-.client-info p {
-    color: #666666;
-    line-height: 26px;
-    font-weight: 400;
-}
-.client-single-item a img {
-    margin: auto;
-    width: auto;
-}
-
-.clients-list-wrapper {
-    display: flex;
-}
-/*clients section css End*/
 
 /*event section css start*/
 .event-section {

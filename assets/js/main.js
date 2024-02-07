@@ -8,131 +8,126 @@ $(document).ready(function(){
         $('body').removeClass('fixed-header');
       }
     });
+  //Home slider Js
+  $('.home__title-slide-wrapper').owlCarousel({
+      loop: true,
+      margin: 0,
+      dots: false,
+      nav: false,    
+      items: 1,
+      autoplay: true,
+      autoPlaySpeed: 5000,
+      autoPlayTimeout: 5000,
+      autoplayHoverPause: true,
   });
-//Home slider Js
-$('.home__title-slide-wrapper').owlCarousel({
-    loop: true,
-    margin: 0,
-    dots: false,
-    nav: false,    
-    items: 1,
-    autoplay: true,
-    autoPlaySpeed: 5000,
-    autoPlayTimeout: 5000,
-    autoplayHoverPause: true,
-});
 
-// Courses Slider Js
-$('.course-items-wrapper').owlCarousel({
-    loop: true,
-    margin: 0,
-    dots: false,
-    nav: true,
-    autoPlay: true,
-    autoPlaySpeed: 1000,
-    autoPlayTimeout: 1000,
-    autoPlayHoverPause: false,
-    responsive: {
+  // Courses Slider Js
+  $('.course-items-wrapper').owlCarousel({
+      loop: true,
+      margin: 0,
+      dots: false,
+      nav: true,
+      autoPlay: true,
+      autoPlaySpeed: 1000,
+      autoPlayTimeout: 1000,
+      autoPlayHoverPause: false,
+      responsive: {
+          0: {
+              items: 1
+          },
+          600: {
+              items:2
+          },
+          1000: {
+              items: 3
+          }
+      }
+  });
+
+  //Team Slider Js
+  $('.team-items-wrapper').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,        
+      autoplay: true,
+      smartSpeed:1000,
+      responsiveClass: true,
+      responsive: {
         0: {
-            items: 1
+          items: 1,
+          nav: true
         },
         600: {
-            items:2
+          items: 2,
+          nav: true
         },
-        1000: {
-            items: 3
+        1024: {
+          items: 2,
+          nav: true,
+          loop: true,
+          margin: 0
+        },
+        1025: {
+          items: 3,
+          nav: true,
+          loop: true,
+          margin: 0
         }
-    }
-});
+      },
+  });
 
-//Team Slider Js
-$('.team-items-wrapper').owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: true,        
-    autoplay: true,
-    smartSpeed:1000,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
+  //Review Slider Js
+  $('.review-items-wrapper').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 1,
+          nav: true
+        },
+        1024: {
+          items: 2,
+          nav: true,
+          loop: true,
+          margin: 0
+        }
       },
-      600: {
-        items: 2,
-        nav: true
-      },
-      1024: {
-        items: 2,
-        nav: true,
-        loop: true,
-        margin: 0
-      },
-      1025: {
-        items: 3,
-        nav: true,
-        loop: true,
-        margin: 0
-      }
-    },
-});
+      autoplay: true,
+      smartSpeed:1000
+  });
 
-//Review Slider Js
-$('.review-items-wrapper').owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: true,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
-      },
-      600: {
-        items: 1,
-        nav: true
-      },
-      1024: {
-        items: 2,
-        nav: true,
-        loop: true,
-        margin: 0
-      }
-    },
-    autoplay: true,
-    smartSpeed:1000
-});
-
-$(document).ready(function() {
-  $('.clients-list-wrapper').owlCarousel({
+  //Client Slider JS
+  $('.client-items-wrapper').owlCarousel({
       loop: true,
       margin: 0,
       nav: false,
       responsiveClass: true,
       responsive: {
         0: {
-          items: 1,
-          nav: false
+          items: 1
         },
         676: {
-          items: 2,
-          nav: false
+          items: 2
         },
         991: {
-          items: 4,
-          nav: false
+          items: 4
         },
         1000: {
-          items: 3,
-          nav: false,
-          loop: true,
-          margin: 0
+          items: 6
         }
       },
       autoplay: true,
       smartSpeed:1000,
   });
+
 });
+
 
 // video popup start
 $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
