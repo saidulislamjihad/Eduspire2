@@ -1416,6 +1416,224 @@ body {
 }
 /*Blog section css End*/
 
+/* Blog detsils section css start */
+.blog-details-section {
+    padding: 40px 0;
+}
+
+.blog-details__image-outer {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: all .5s ease;
+}
+
+.blog-details__post-date {
+    position: absolute;
+    z-index: 1;
+    bottom: 15px;
+    left: 15px;
+    padding: 15px 20px;
+    color: #158bf1;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.blog-details__post-date span {
+    font-size: 40px;
+    display: block;
+    font-weight: 900;
+}
+
+.blog-details__post-date:after {
+    content: "";
+    position: absolute;
+    background: #002147;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 7px;
+}
+
+.blog-details__image {
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.blog-details__image-outer:hover img {
+    transform: scale(1.2);
+}
+
+.blog-details__info-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.blog-details__info-outer .blog__item-info-meta-outer {
+    border-top: none;
+    border-bottom: 1px solid #e7e7e7;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.blog-details__info-inner {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #4e4b4b;
+}
+
+.comments-area {
+    margin-top: 50px;
+}
+.comments-area .comments-title h4 {
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.comments-area .comments-lists .comment-item {
+    margin-bottom: 30px;
+}
+.comments-area .comments-lists .comment-item .image {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.comments-lists .comment-item .image img {
+    width: 80px;
+    height: 80px;
+}
+.comments-area .comments-lists .comment-item {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.comments-lists .comment-item .comments-info {
+    margin-bottom: 15px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+}
+.comments-lists .comment-item .comments-info a {
+    border: 1px solid #e7e7e7;
+    color: #666666;
+    padding: 2px 10px;
+    font-size: 12px;
+    margin-left: 14px;
+    display: inline-block;
+}
+.comment-item .content h5 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #002147;
+}
+.comment-item .content {
+    display: table-cell;
+}
+.comments-info a i {
+    margin-right: 5px;
+}
+.comment-item .content p {
+    font-size: 14px;
+}
+.comments-item.reply {
+    padding-left: 80px;
+    display: table-cell;
+}
+.comments-item.reply .image {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+.comments-item.reply .image img {
+    width: 80px;
+    height: 80px;
+}
+.comments-item.reply .comments-info {
+    display: table-cell;
+}
+.comments-item.reply .comments-info h5 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #002147;
+}
+.comments-item.reply .comments-info {
+    margin-bottom: 15px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+}
+.comments-item.reply .comments-info a {
+    border: 1px solid #e7e7e7;
+    color: #666666;
+    padding: 2px 10px;
+    font-size: 12px;
+    margin-left: 14px;
+    display: inline-block;
+}
+.comments-item.reply .comments-info p {
+    font-size: 14px;
+}
+.comments-title {
+    margin-bottom: 30px;
+}
+.comments-form h4 {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact-comments input {
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    box-shadow: inherit;
+    padding: 6px 12px;
+    display: block;
+    height: 55px;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.contact-comments textarea {
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    box-shadow: inherit;
+    min-height: 150px;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+.comment-btn {
+    margin-bottom: 0;
+}
+.comment-btn button {
+    background: #0165bb;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px 25px;
+    margin-top: 20px;
+    transition: all .4s ease;
+}
+/* Blog detsils section css End */
+
 /*subscribe now section css start*/
 .subscribe-section {
     padding: 80px 0;
