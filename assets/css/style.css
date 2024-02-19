@@ -100,6 +100,10 @@ body {
     z-index: 1;
 }
 
+.banner-section.details {
+    text-align: start;
+}
+
 .banner-section:after {
     content: "";
     position: absolute;
@@ -322,7 +326,7 @@ body {
 }
 
 .nav-list-item.item-has-megamenu:hover .megamenu-list {
-    top: 124px;
+    top: 122px;
     opacity: 1;
     visibility: visible;
     transition: all .3s ease;
@@ -2162,7 +2166,7 @@ body {
     padding-bottom: 10px;
 }
 
-img.recent-qua__item-image {
+.recent-qua__item-image {
     max-width: 150px;
 }
 
@@ -2187,6 +2191,113 @@ img.recent-qua__item-image {
     color: #0165bb;
 }
 /* Service details page css End */
+
+/* Industries section css start */
+.industries-section {
+    padding: 40px 0;
+}
+
+.industries-item-outer {
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    padding: 20px 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.industries-item__image-outer {
+    margin-bottom: 10px;
+}
+
+.industries-item__content-title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.industries-item__content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5a5757;
+}
+
+.industries-item__btn-link {
+    display: inline-block;
+    background: linear-gradient(#0165bb, #012861);
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.industries-item__btn-link:hover {
+    color: #000;
+}
+
+.industries-category-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+}
+
+.industries-category__title {
+    background: var(--primary);
+    color: #ffffff;
+    margin: 0;
+    font-size: 18px;
+    padding: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.industries-category__item-outer {
+    display: block;
+    border-bottom: 1px dashed #666666;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+}
+
+.industries-category__item-outer:hover {
+    /* background: #ddd; */
+    color: var(--btn-bg);
+}
+/* Industries section css End */
+
+/* Service details page css start */
+.industries-details-section {
+    padding: 40px 0;
+}
+
+.industries-details__content-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.industries-details__title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.industries-details__content {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #323131;
+}
+/* Industries details page css End */
 
 
 @media screen and (max-width: 1024px){
