@@ -2299,6 +2299,91 @@ body {
 }
 /* Industries details page css End */
 
+/* Apply section css start */
+.apply-section {
+    padding: 40px 0;
+}
+
+.rpl-qualification__form-wrap {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 20px;
+    background: #fff;
+}
+
+.rpl-qualification__form-item-outer {
+    margin-bottom: 15px;
+}
+
+.rpl-qualification__form-item-outer label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+}
+
+.rpl-qualification__form-item-outer input,.rpl-qualification__form-item-outer select {
+    height: 45px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.rpl-qualification__form-item-outer input:focus,
+.rpl-qualification__form-item-outer select:focus,
+.rpl-qualification__form-item-outer textarea:focus {
+    box-shadow: none;
+    border: 1px solid var(--btn-bg);
+}
+
+.rpl-qualification__form-btn-outer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rpl-qualification__form-btn-inner {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: unset;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #012861;
+    color: #000;
+    display: inline-block;
+    background: transparent;
+}
+.rpl-qualification__form-btn-inner:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 51%;
+    background: linear-gradient(#0165bb, #012861);
+    z-index: -1;
+    transition: .5s;
+    left: 0;
+    top: 0;
+}
+.rpl-qualification__form-btn-inner:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 51%;
+    background: linear-gradient(#0165bb, #012861);
+    z-index: -1;
+    transition: all .5s ease;
+    right: 0;
+    bottom: 0;
+}
+.rpl-qualification__form-btn-inner:hover::before,.rpl-qualification__form-btn-inner:hover::after{
+    height: 100%;
+}
+.rpl-qualification__form-btn-inner:hover {
+    color: #fff;
+}
+/* Apply section css End */
+
 
 @media screen and (max-width: 1024px){
     .header-main-top {
